@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.scau.db.bookmanagement.mapper.BookMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.scau.db.bookmanagement.entity.Book">
+        <id column="id" property="id" />
+        <result column="isbn" property="isbn" />
+        <result column="name" property="name" />
+        <result column="publisher" property="publisher" />
+        <result column="user_id_card" property="userIdCard" />
+        <result column="book_category_id" property="bookCategoryId" />
+        <result column="publish_by" property="publishBy" />
+        <result column="borrow_by" property="borrowBy" />
+        <result column="create_by" property="createBy" />
+        <result column="modify_by" property="modifyBy" />
+    </resultMap>
+
+</mapper>
